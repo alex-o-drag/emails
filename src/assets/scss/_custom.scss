@@ -1,0 +1,30 @@
+.title{
+  font-weight: bold;
+}
+
+.main-img{
+  border-radius: 25px;
+}
+
+.wellcome-paragraph{
+  padding: 0 20px;
+}
+
+.line{
+  border-top: 2px solid $black;
+}
+
+.small-text{
+  font-size: 13px;
+}
+
+.subscribe-link{
+  color: $black;
+}
+
+.underline{
+  text-decoration: underline;
+  a{
+    color: $black !important;
+  }
+}
