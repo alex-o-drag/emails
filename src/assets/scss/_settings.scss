@@ -57,15 +57,15 @@ $block-grid-gutter: $global-gutter;
 // -------------
 
 $global-font-color: $black;
-$body-font-family: Helvetica, Arial, sans-serif;
+$body-font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
 $global-font-weight: normal;
 $header-color: inherit;
 $global-line-height: 130%;
-$global-font-size: 16px;
+$global-font-size: 19px;
 $body-line-height: $global-line-height;
 $header-font-family: $body-font-family;
 $header-font-weight: $global-font-weight;
-$h1-font-size: floor($global-font-size * 2.125);
+$h1-font-size: floor($global-font-size * 1.900);
 $h2-font-size: floor($global-font-size * 1.875);
 $h3-font-size: floor($global-font-size * 1.75);
 $h4-font-size: floor($global-font-size * 1.5);
