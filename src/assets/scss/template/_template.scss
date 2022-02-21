@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans:wght@400;700&display=swap');
 // These are the styles to make some of the templates look extra nice.
 // Feel free to remove these styles for production!
 
@@ -56,4 +57,50 @@ table.button.google table td {
 
 .wrapper.secondary {
   background: #f3f3f3;
+}
+
+
+
+//Custom
+.radius{
+  border-radius: $global-radius;
+}
+.content{ border-radius: 10px; border: 1px solid red; }
+
+table.container.radius {
+  border-radius:$global-radius;
+  border-collapse: separate;
+}
+
+.dark-bg{
+  background-color: $dark-gray;
+}
+
+.rounded-bottom{
+  border-radius: 0 0 $global-radius $global-radius;
+}
+
+table.menu.header-menu {
+  td,th{
+    .menu-item a{
+      color: $white;
+      font-size: 13px;
+      &:hover{
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.main-title{
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.15;
+}
+
+.big-padding-wrapper{
+  background-image: url('/assets/img/watch-bg.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
 }
