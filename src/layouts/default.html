@@ -7,8 +7,34 @@
   <head>
     <link rel="stylesheet" type="text/css" href="{{root}}css/app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <!--[if !mso]><!-- -->
+    <link  href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet" type="text/css" />
+    <!--<![endif]-->
+
+    <style>
+      @media screen {
+           @font-face {
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Noto Sans Regular'), local('Noto-Sans-Regular'), url(https://fonts.gstatic.com/s/notosans/v25/o-0IIpQlx3QUlC5A4PNr5TRA.woff2) format('woff');
+            mso-generic-font-family: swiss;
+            mso-font-alt: Arial;
+          }
+
+          @font-face {
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Noto Sans Bold'), local('Noto-Sans-Bold'), url(https://fonts.gstatic.com/s/notosans/v25/o-0NIpQlx3QUlC5A4PNjXhFVZNyB.woff2) format('woff');
+            mso-generic-font-family: swiss;
+            mso-font-alt: Arial;
+          } 
+      }
+    </style>
+      
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width">
     <title>{{subject}}</title>
