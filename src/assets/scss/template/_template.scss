@@ -73,7 +73,7 @@ table.container.radius {
 }
 
 .dark-bg{
-  background-color: $dark-gray;
+  background-color: $darker-gray;
 }
 
 .rounded-bottom{
@@ -92,10 +92,22 @@ table.menu.header-menu {
   }
 }
 
-.main-title{
+.main__title{
   font-weight: 700;
-  font-family: 'Inter', sans-serif;
-  line-height: 1.15;
+  line-height: 1.20;
+}
+
+.main__model{
+  color: $darker-gray;
+  font-size: $small-font-size;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.main__paragraph{
+  color: $darker-gray;
+  font-size: $small-font-size;
+  line-height: 1.4;
 }
 
 .big-padding-wrapper{
@@ -105,3 +117,19 @@ table.menu.header-menu {
   background-size: contain;
 }
 
+.list__title{
+  font-size: $bigger-font-size;
+  font-weight: 700;
+}
+
+.list__item-title{
+  font-size: $medium-font-size;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.list__item-price{
+  color: $darker-gray;
+  font-size: $smaller-font-size;
+  margin-bottom: 12px;
+}
