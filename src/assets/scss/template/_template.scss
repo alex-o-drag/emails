@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans:wght@400;700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans:wght@400;700&display=swap');
 // These are the styles to make some of the templates look extra nice.
 // Feel free to remove these styles for production!
 
@@ -115,11 +115,20 @@ table.menu.header-menu {
   background-repeat: no-repeat;
   background-position: right center;
   background-size: contain;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    background-image: none;
+  }
+
 }
 
 .list__title{
   font-size: $bigger-font-size;
   font-weight: 700;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    text-align: center;
+  }
 }
 
 .list__item-title{
@@ -128,8 +137,58 @@ table.menu.header-menu {
   margin-bottom: 6px;
 }
 
+.list__all-link{
+  text-align: right;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    text-align: center;
+  }
+}
+
 .list__item-price{
   color: $darker-gray;
   font-size: $smaller-font-size;
   margin-bottom: 12px;
+}
+
+.list__item{
+  
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    img{
+      margin: 0 auto;
+    }
+    .list__item-title,
+    .list__item-price{
+        text-align: center;
+     }
+
+     .button{
+       margin: 0 auto;
+     }
+
+  }
+
+  
+}
+
+
+.footer__title{
+  font-size: $big-font-size;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer__paragraph{
+  font-size: $smaller-font-size;
+  color: $darker-gray;
+  line-height: 1.7;
+}
+
+.footer__tel-link {
+  color: $darker-gray;
+  font-size: $smaller-font-size;
+  font-weight: 600;
+}
+
+.footer__mail-link {
+  font-size: $smaller-font-size;
 }
