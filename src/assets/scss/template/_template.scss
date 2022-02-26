@@ -111,13 +111,13 @@ table.menu.header-menu {
 }
 
 .big-padding-wrapper{
-  background-image: url('/assets/img/watch-bg.png');
+  background-image: url('https://raw.githubusercontent.com/alex-o-drag/emails/watch/src/assets/img/watch-bg.png');
   background-repeat: no-repeat;
   background-position: right center;
   background-size: contain;
 
   @media only screen and (max-width: #{$global-breakpoint}) {
-    background-image: none;
+    background-image: none !important;
   }
 
 }
@@ -127,7 +127,16 @@ table.menu.header-menu {
   font-weight: 700;
 
   @media only screen and (max-width: #{$global-breakpoint}) {
-    text-align: center;
+    text-align: center !important;
+  }
+}
+
+.list__item{
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    .button{
+      margin-right: auto !important;
+      margin-left: auto !important;
+    }
   }
 }
 
@@ -140,7 +149,7 @@ table.menu.header-menu {
 .list__all-link{
   text-align: right;
   @media only screen and (max-width: #{$global-breakpoint}) {
-    text-align: center;
+    text-align: center !important;
   }
 }
 
@@ -154,11 +163,11 @@ table.menu.header-menu {
   
   @media only screen and (max-width: #{$global-breakpoint}) {
     img{
-      margin: 0 auto;
+      margin: 0 auto !important;
     }
     .list__item-title,
     .list__item-price{
-        text-align: center;
+        text-align: center !important;
      }
 
      .button{
@@ -170,6 +179,11 @@ table.menu.header-menu {
   
 }
 
+table.menu.small-vertical{
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    margin: 0 auto !important;
+  }
+}
 
 .footer__title{
   font-size: $big-font-size;
